@@ -47,21 +47,21 @@ header h2{
 
 /** Text Banner CSS **/
 
-.container-list{
+div.container-list{
     margin-top: 20px;
     float: left;
-    width: 620px;
+    width: 520px;
     height: 280px;
     background-color: #212343da;
-    padding: 30px;
-    margin-left: 25px;
+    padding: 15px;
+    margin-left: 10px;
 }
 
-.container-list ul{
+div.container-list ul{
     list-style-position: inside;
 }
 
-.container-list ul li{
+div.container-list ul li{
     color: white;
     margin-top: 10px
 }
@@ -69,7 +69,7 @@ header h2{
 
 /** Form CSS **/
 
-.form{
+div.form{
     max-width: 400px;
     height: 560px;
     float: right;
@@ -78,10 +78,10 @@ header h2{
     border: 8px solid #ccc;
     background-color: white;
     padding: 10px;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
-.form h2{
+div.form h2{
     font-weight: normal;
     color: #999;
     font-size: 21px;
@@ -89,13 +89,13 @@ header h2{
     padding-top: 30px;
 }
 
-.form form p{
+div.form form p{
     color: #999;
     font-size: 17px;
     margin: 50px 0 20px;
 }
 
-.form form input[type=submit]{
+div.form form input[type=submit]{
     display: block;
     width: 95%;
     color: white;
@@ -107,24 +107,24 @@ header h2{
     font-size: 17px;
 }
 
-.form form input[type=submit]:hover{
+div.form form input[type=submit]:hover{
     background-color: #2d3058;
     transition: 0.3s;
 }
 
-.form form .input-container{
+div.form form .input-container{
     margin-top: 20px;
 }
 
-.form form .input-container label{
+div.form form .input-container label{
     display: block;
     width: 100%;
     color: #999;
     font-size: 17px;
 }
 
-.form form .input-container input[type=text],
-.form form .input-container input[type=email]{
+div.form form .input-container input[type=text],
+div.form form .input-container input[type=email]{
     display: block;
     width: 95%;
     padding: 12px;
@@ -133,16 +133,29 @@ header h2{
     margin-top: 5px;
 }
 
-@media screen and (max-width: 800px){
-    .form{
+@media screen and (max-width: 950px){
+    div.form{
         display: block;
         float: none;
         margin: 0 auto;
+        z-index: 2;
     }
+    div.container-list{
+        display: block;
+        position: relative;
+        z-index: 1;
+        top: -30px;
+        float: none;
+        height: 100%;
+        width: 100%;
+        background-color: #242644;
+        padding: 30px;
+        margin: 0;
+    }    
 }
 
 @media screen and (max-width: 450px){
-    .form{
+    div.form{
         max-width: 95%;
     }
 }
