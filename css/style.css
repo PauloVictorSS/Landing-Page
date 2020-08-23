@@ -29,7 +29,7 @@ header{
 }
 
 header h2{
-    padding: 30px;
+    padding: 30px 15px;
     color: white;
 }
 
@@ -48,7 +48,7 @@ header h2{
 /** Text Banner CSS **/
 
 div.container-list{
-    margin-top: 20px;
+    margin-top: 80px;
     float: left;
     width: 520px;
     height: 280px;
@@ -152,6 +152,17 @@ section.text p{
     max-width: 700px;
     padding: 10px;
     text-align: justify;
+}
+
+section.text div.arrow{
+    position: relative;
+    top: 57.5px;
+    left: 50%;
+    margin-left: -18px;
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/arrow.png");
+    background-size: 100% 100%;
 }
 
 
