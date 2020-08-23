@@ -45,6 +45,28 @@ header h2{
 }
 
 
+/** Text Banner CSS **/
+
+.container-list{
+    margin-top: 20px;
+    float: left;
+    width: 620px;
+    height: 280px;
+    background-color: #212343da;
+    padding: 30px;
+    margin-left: 25px;
+}
+
+.container-list ul{
+    list-style-position: inside;
+}
+
+.container-list ul li{
+    color: white;
+    margin-top: 10px
+}
+
+
 /** Form CSS **/
 
 .form{
@@ -68,7 +90,7 @@ header h2{
 }
 
 .form form p{
-    color: #bbb;
+    color: #999;
     font-size: 17px;
     margin: 50px 0 20px;
 }
@@ -85,6 +107,11 @@ header h2{
     font-size: 17px;
 }
 
+.form form input[type=submit]:hover{
+    background-color: #2d3058;
+    transition: 0.3s;
+}
+
 .form form .input-container{
     margin-top: 20px;
 }
@@ -92,7 +119,7 @@ header h2{
 .form form .input-container label{
     display: block;
     width: 100%;
-    color: #bbb;
+    color: #999;
     font-size: 17px;
 }
 
@@ -102,7 +129,7 @@ header h2{
     width: 95%;
     padding: 12px;
     border: none;
-    border: 1px solid #bbb;
+    border: 1px solid #999;
     margin-top: 5px;
 }
 
