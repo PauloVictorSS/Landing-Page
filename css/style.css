@@ -166,6 +166,39 @@ section.text div.arrow{
 }
 
 
+/** Section Benefícios **/
+
+section.options{
+    padding: 90px 0;
+}
+
+section.options h2{
+    text-align: center;
+    font-weight: normal;
+    color: #462663;
+    padding-bottom: 20px;
+}
+
+section.options h2#title{
+    padding-bottom: 60px;
+}
+
+section.options div.container-section{
+    text-align: center;
+}
+
+section.options div.container-section div.container-single{
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+section.options div.container-section div.container-single img{
+    width: 60px;
+}
+
+
+
 /** Medias para telas menores **/
 
 @media screen and (max-width: 950px){
@@ -188,12 +221,16 @@ section.text div.arrow{
     }    
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     header h2{
         display: block;
         text-align: center;
     }
     div.form{
         max-width: 95%;
+    }
+    section.options div.container-section div.container-single{
+        float: none;
+        width: 100%;
     }
 }
