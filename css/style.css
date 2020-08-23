@@ -133,6 +133,30 @@ div.form form .input-container input[type=email]{
     margin-top: 5px;
 }
 
+
+/** Section Text **/
+
+section.text{
+    padding: 40px 0;
+    background-color: #ddd;
+    text-align: center;
+}
+
+section.text h2{
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+section.text p{
+    display: inline-block;
+    max-width: 700px;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+/** Medias para telas menores **/
+
 @media screen and (max-width: 950px){
     div.form{
         display: block;
@@ -145,7 +169,6 @@ div.form form .input-container input[type=email]{
         position: relative;
         z-index: 1;
         top: -30px;
-        float: none;
         height: 100%;
         width: 100%;
         background-color: #242644;
@@ -155,6 +178,10 @@ div.form form .input-container input[type=email]{
 }
 
 @media screen and (max-width: 450px){
+    header h2{
+        display: block;
+        text-align: center;
+    }
     div.form{
         max-width: 95%;
     }
