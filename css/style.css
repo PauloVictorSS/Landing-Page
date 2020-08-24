@@ -70,6 +70,7 @@ div.container-list ul li{
 /** Form CSS **/
 
 div.form{
+    width: 95%;
     max-width: 400px;
     height: 560px;
     float: right;
@@ -223,6 +224,10 @@ footer a:hover{
 /** Medias para telas menores **/
 
 @media screen and (max-width: 950px){
+    header h2{
+        display: block;
+        text-align: center;
+    }
     div.form{
         display: block;
         float: none;
@@ -243,13 +248,6 @@ footer a:hover{
 }
 
 @media screen and (max-width: 500px){
-    header h2{
-        display: block;
-        text-align: center;
-    }
-    div.form{
-        max-width: 95%;
-    }
     section.options div.container-section div.container-single{
         float: none;
         width: 100%;
